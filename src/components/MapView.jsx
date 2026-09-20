@@ -345,27 +345,7 @@ const MapView = ({ places, onSelectPlace, focusedPlace }) => {
           style={{ position: 'relative' }}
         />
 
-        {/* Legend */}
-        <div style={{ 
-          display: 'flex', 
-          flexWrap: 'wrap', 
-          gap: '1rem', 
-          marginTop: '1rem', 
-          padding: '0.8rem', 
-          backgroundColor: '#FFFFFF', 
-          border: '2px solid var(--violeta-dark)',
-          fontSize: '0.85rem',
-          fontWeight: '700'
-        }}>
-          <span><strong>Convenciones:</strong></span>
-          <span>🍔 Gastronomía</span>
-          <span>🎮 Entretenimiento</span>
-          <span>🎭 Cultura</span>
-          <span>🌿 Naturaleza</span>
-          <span>🍸 Vida nocturna (+18)</span>
-          <span>☀️ Aire Libre</span>
-          <span>🛍️ Compras</span>
-        </div>
+       
 
       </div>
     </section>
