@@ -32,7 +32,7 @@ const Hero = ({ totalPlaces, onExploreClick }) => {
       </h2>
 
       <p style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)', maxWidth: '850px', margin: '0 auto 2rem auto', fontWeight: 'bold', lineHeight: 1.4 }}>
-        Planes culturales, gastronómicos, centros comerciales y vida nocturna al alcance de tu bolsillo. ¡No te quedes sin parche este fin de semana!
+        Planes culturales, gastronómicos, centros comerciales y vida nocturna al alcance de tu bolsillo. ¡No te quedes sin parche por esta semana!
       </p>
 
       {/* Action Buttons */}
