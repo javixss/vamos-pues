@@ -165,7 +165,7 @@ export const initialPlaces = [
       instagram: "https://www.instagram.com/cinemasroyalfilms",
       facebook: "https://www.facebook.com/CinemasRoyalFilms/",
       web: "https://cinemasroyalfilms.com/cartelera/medell%C3%ADn",
-      maps: "https://share.google/cKOiGE5Vs2gUFT4P1"
+      maps: "https://www.google.com/maps/search/Royal+Films/@6.2259777,-75.5960295,7837m/data=!3m2!1e3!4b1?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
     },
     color: "bg-chartreuse",
     tags: ["cine barato", "palomitas", "estrenos"]
@@ -180,9 +180,9 @@ export const initialPlaces = [
     priceMax: 80000,
     priceLabel: "$22.000 - $80.000",
     isAdultOnly: false,
-    address: "Cl. 24 #48-28, Ciudad del Río, Medellín",
+    address: "Cl. 24 #48-28, Ciudad del Río, Medellín, Antioquia",
     zone: "El Poblado",
-    coords: [6.2244, -75.5749],
+    coords: [6.2259781, -75.5754299],
     hours: "Lunes a Jueves: 12pm a 10pm | Viernes y Sábado: 12pm a 12am | Domingo: 12pm a 8pm",
     howToGet: "Metro línea A hasta estación Industriales, caminar 3 cuadras al suroriente hacia Ciudad del Río.",
     links: {
@@ -190,7 +190,7 @@ export const initialPlaces = [
       facebook: "https://www.facebook.com/mercadodelriomedellin/",
       tiktok: "https://www.tiktok.com/@mercadodelrio",
       web: "https://www.mercadodelrio.com.co/",
-      maps: "https://maps.app.goo.gl/H4vHh11Xj51fQ7nZ6"
+      maps: "https://www.google.com/maps/place/Mercado+del+R%C3%ADo/@6.2259781,-75.5780048,980m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e4429cac347588f:0xc5161940357a8cc0!8m2!3d6.2259781!4d-75.5754299!16s%2Fg%2F11clv7wh19?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
     },
     color: "bg-orange",
     tags: ["gastronomía", "food court", "amigos", "cerveza"]
@@ -205,9 +205,9 @@ export const initialPlaces = [
     priceMax: 15000,
     priceLabel: "Entrada Gratis (Plan económico)",
     isAdultOnly: false,
-    address: "Cl. 73 #51D-14, Aranjuez, Medellín",
+    address: "Cl. 73 #51D-14, Aranjuez, Medellín, Antioquia",
     zone: "Norte / Aranjuez",
-    coords: [6.2705, -75.5639],
+    coords: [6.2693605, -75.5648496],
     hours: "Martes a Domingo: 9:00am a 4:30pm (Lunes cerrado por mantenimiento)",
     howToGet: "Metro línea A directo hasta estación Universidad. La entrada principal está justo frente a la salida del metro.",
     links: {
@@ -215,7 +215,7 @@ export const initialPlaces = [
       facebook: "https://www.facebook.com/jardinbotanicodemedellin/",
       youtube: "https://www.youtube.com/user/jardinbotanicomed",
       web: "https://www.botanicomedellin.org/",
-      maps: "https://maps.app.goo.gl/W5NqX9QdZtE8K5j98"
+      maps: "https://www.google.com/maps/place/Jard%C3%ADn+Bot%C3%A1nico+de+Medell%C3%ADn/@6.2693605,-75.5674245,980m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e4428e80e411f91:0x142ab912fdb68353!8m2!3d6.2693605!4d-75.5648496!16s%2Fm%2F0w7ppn7?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
     },
     color: "bg-chartreuse",
     tags: ["gratis", "naturaleza", "picnic", "iguanas", "orquídeas"]
@@ -230,9 +230,9 @@ export const initialPlaces = [
     priceMax: 48000,
     priceLabel: "$20.000 - $48.000 (Tarifa diferenciada Sisbén)",
     isAdultOnly: false,
-    address: "Cra. 53 #73-75, frente al Jardín Botánico, Medellín",
+    address: "Cra. 52 #73-75, Aranjuez, Medellín, Antioquia",
     zone: "Norte / Aranjuez",
-    coords: [6.2711, -75.5658],
+    coords: [6.2708025, -75.5656966],
     hours: "Martes a Viernes: 8:30am a 5:30pm | Sábados, Domingos y Festivos: 10am a 6:30pm",
     howToGet: "Metro línea A hasta estación Universidad. Salida directa a la plaza de los dinosaurios de Explora.",
     links: {
@@ -240,7 +240,7 @@ export const initialPlaces = [
       facebook: "https://www.facebook.com/ParqueExplora/",
       youtube: "https://www.youtube.com/user/parqueexplora",
       web: "https://www.parqueexplora.org/",
-      maps: "https://maps.app.goo.gl/9W5iE72yYVv1b9j26"
+      maps: "https://www.google.com/maps/place/Parque+Explora/@6.2708025,-75.5682715,980m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e4428dda6ffffff:0xd7c8b5dfcb32b137!8m2!3d6.2708025!4d-75.5656966!16s%2Fm%2F0wy3b18?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
     },
     color: "bg-rosa",
     tags: ["ciencia", "acuario", "educativo", "niños y adultos"]
@@ -282,9 +282,9 @@ export const initialPlaces = [
     priceMax: 10000,
     priceLabel: "Totalmente Gratis",
     isAdultOnly: false,
-    address: "Autopista Sur entre calles 33 y 44 (San Juan), Medellín",
+    address: "Auto. S, Laureles - Estadio, Medellín, Antioquia",
     zone: "Conquistadores",
-    coords: [6.2425, -75.5779],
+    coords: [6.2435957, -75.5795253],
     hours: "Abierto 24 horas (Recomendado hasta las 10:00pm)",
     howToGet: "Metro línea A hasta estación Exposiciones o Alpujarra, caminar hacia el occidente cruzando el edificio inteligente de EPM.",
     links: {
@@ -292,7 +292,7 @@ export const initialPlaces = [
       facebook: "https://www.facebook.com/AlcaldiadeMed/",
       twitter: "https://x.com/AlcaldiadeMed",
       web: "https://www.medellin.gov.co/",
-      maps: "https://maps.app.goo.gl/kX34z7g3N9s1A1k49"
+      maps: "https://www.google.com/maps/place/Parques+del+R%C3%ADo/@6.2435957,-75.5821002,980m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e4429ac150efd3b:0xe07ee393112a7a77!8m2!3d6.2435957!4d-75.5795253!16s%2Fg%2F11bv18m15l?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
     },
     color: "bg-chartreuse",
     tags: ["gratis", "mascotas", "bicicleta", "aire libre", "atardecer"]
@@ -309,14 +309,14 @@ export const initialPlaces = [
     isAdultOnly: false,
     address: "Calle 30A #55-64, Cerro Nutibara, Medellín",
     zone: "Belén",
-    coords: [6.2361, -75.5801],
+    coords: [6.2363889, -75.58],
     hours: "Lunes a Domingo: 5:00am a 11:00pm",
     howToGet: "Metro línea A hasta estación Industriales o Metroplús estación Nutibara; ascenso por sendero peatonal o taxi corto.",
     links: {
       instagram: "https://www.instagram.com/cerro.nutibara",
       facebook: "https://www.facebook.com/CerroNutibaraOficial/",
       web: "https://www.medellin.gov.co",
-      maps: "https://maps.app.goo.gl/P8u2Zp6Zc2Yq5fB38"
+      maps: "https://www.google.com/maps/place/Cerro+de+Nutibara/@6.2363887,-75.5902997,3918m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e4429b2283a20c3:0xb745dc1a9e7844e2!8m2!3d6.2363889!4d-75.58!16s%2Fg%2F12lw4x4f4?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
     },
     color: "bg-orange",
     tags: ["mirador", "pueblito paisa", "fotografía", "gratis"]
@@ -331,9 +331,9 @@ export const initialPlaces = [
     priceMax: 35000,
     priceLabel: "$12.500 - $35.000 (Incluye Metrocable)",
     isAdultOnly: false,
-    address: "Corregimiento de Santa Elena, Medellín",
+    address: "Vía a Piedras Blancas, Santa Elena, Medellín, Antioquia",
     zone: "Santa Elena",
-    coords: [6.2825, -75.5025],
+    coords: [6.2803712, -75.5026504],
     hours: "Martes a Domingo: 9:00am a 5:00pm (Lunes cerrado)",
     howToGet: "Metro línea A hasta Acevedo, transfer a Metrocable línea K hasta Santo Domingo, y transfer a Metrocable turístico línea L Arví.",
     links: {
@@ -341,7 +341,7 @@ export const initialPlaces = [
       facebook: "https://www.facebook.com/ParqueArvi/",
       youtube: "https://www.youtube.com/user/ParqueArvi",
       web: "https://parquearvi.org/",
-      maps: "https://maps.app.goo.gl/bM5K6W4r3V8z1L6T8"
+      maps: "https://www.google.com/maps/place/Parque+Arv%C3%AD/@6.2803712,-75.5052253,979m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e442641a4ea9d53:0x33ed6dc5217b782c!8m2!3d6.2803712!4d-75.5026504!16s%2Fm%2F0tkfsct?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
     },
     color: "bg-chartreuse",
     tags: ["metrocable", "bosque", "senderismo", "fresas", "aire libre"]
@@ -356,16 +356,16 @@ export const initialPlaces = [
     priceMax: 35000,
     priceLabel: "$8.000 - $35.000 (Cerveza y trago accesible)",
     isAdultOnly: true,
-    address: "Cra. 51 #45-80, Guayaquil, Medellín (Junto a estación Metro San Antonio)",
+    address: "Cra. 51 #45-80, La Candelaria, Medellín, Antioquia",
     zone: "Centro",
-    coords: [6.2464, -75.5681],
+    coords: [6.2465376, -75.5697403],
     hours: "Lunes a Sábado: 8am a 11pm | Domingos: 12pm a 8pm",
     howToGet: "Metro líneas A o B hasta estación San Antonio. Salida Bolívar hacia el viaducto, a solo unos pasos.",
     links: {
       instagram: "https://www.instagram.com/salonmalaga",
       facebook: "https://www.facebook.com/salonmalagamedellin/",
       web: "https://salonmalaga.com/",
-      maps: "https://maps.app.goo.gl/o1kZ6XpL2u9y4fV79"
+      maps: "https://www.google.com/maps/place/Sal%C3%B3n+M%C3%A1laga/@6.2465376,-75.5723152,980m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e442855b62cd84f:0x4e71cefb0cb87f7c!8m2!3d6.2465376!4d-75.5697403!16s%2Fg%2F1ptxf5wtr?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
     },
     color: "bg-morado",
     tags: ["+18", "tango", "cerveza", "historia", "centro"]
@@ -380,9 +380,9 @@ export const initialPlaces = [
     priceMax: 120000,
     priceLabel: "$35.000 - $120.000 (Cócteles & Botellas)",
     isAdultOnly: true,
-    address: "Calle 9A #37-16, Hotel The Charlee, Provenza, El Poblado",
+    address: "Cl. 9A #37-16, El Poblado, Medellín, Antioquia",
     zone: "El Poblado",
-    coords: [6.2091, -75.5673],
+    coords: [6.2089223, -75.5670602],
     hours: "Miércoles a Domingo: 5:00pm a 2:00am",
     howToGet: "Metro línea A hasta estación Poblado, tomar taxi o integrado ruta 134 hacia el Parque de El Poblado / Provenza.",
     links: {
@@ -390,7 +390,7 @@ export const initialPlaces = [
       facebook: "https://www.facebook.com/TheCharleeHotel/",
       tiktok: "https://www.tiktok.com/@thecharleehotel",
       web: "https://thecharlee.com/",
-      maps: "https://maps.app.goo.gl/j3G9Z5bT7v4p2L1X8"
+      maps: "https://www.google.com/maps/place/Envy+Rooftop+-+Rooftop+en+Medell%C3%ADn/@6.2089223,-75.5696351,980m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e442829bde97dcf:0xdc543ef78fec78a7!8m2!3d6.2089223!4d-75.5670602!16s%2Fg%2F12cpck0q4?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
     },
     color: "bg-rosa",
     tags: ["+18", "fiesta", "cocteles", "piscina", "provenza"]
@@ -405,16 +405,16 @@ export const initialPlaces = [
     priceMax: 45000,
     priceLabel: "$15.000 - $45.000",
     isAdultOnly: true,
-    address: "Cra. 42 #46-46, Barrio Boston, Medellín",
+    address: "Cl. 47 #43 88, La Candelaria, Medellín, Antioquia",
     zone: "Centro",
-    coords: [6.2435, -75.5632],
+    coords: [6.2449131, -75.5649531],
     hours: "Miércoles a Sábado: 4:00pm a 1:00am",
     howToGet: "Tranvía de Ayacucho hasta estación San José o Pabellón del Agua, y caminar 4 cuadras al norte por la 42.",
     links: {
       instagram: "https://www.instagram.com/lapascasia",
       facebook: "https://www.facebook.com/lapascasia/",
       web: "https://lapascasia.com/",
-      maps: "https://maps.app.goo.gl/9R6K3h1L8x7v5fP49"
+      maps: "https://www.google.com/maps/place/La+Pascasia/@6.2449131,-75.567528,980m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e4428574c58412f:0x51be767e3a3263aa!8m2!3d6.2449131!4d-75.5649531!16s%2Fg%2F11bzv51t5l?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
     },
     color: "bg-morado",
     tags: ["+18", "musica en vivo", "cerveza artesanal", "boston"]
@@ -429,16 +429,16 @@ export const initialPlaces = [
     priceMax: 75000,
     priceLabel: "$25.000 - $75.000",
     isAdultOnly: false,
-    address: "Calle 30 Sur entre carreras 44A y 45, Barrio Jardines, Envigado",
+    address: "Cra. 44a #30a Sur, Cl 30A Sur #2 26 a, Zona 2, Envigado, Antioquia",
     zone: "Envigado",
-    coords: [6.1731, -75.5862],
+    coords: [6.1770063, -75.5860605],
     hours: "Martes a Domingo: 12:00pm a 11:00pm",
     howToGet: "Metro línea A hasta estación Ayurá o Envigado, tomar integrado hacia Parque de Envigado o Jardines.",
     links: {
       instagram: "https://www.instagram.com/explore/tags/buenamesaenvigado",
       facebook: "https://www.facebook.com/buenamesaenvigado/",
       web: "https://envigadotravel.com",
-      maps: "https://maps.app.goo.gl/V3G5B7nK9y1p4L2X7"
+      maps: "https://www.google.com/maps/place/Calle+de+la+Buena+Mesa/@6.1770063,-75.5886354,980m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e4683ea3358f0c3:0x17d280eb21fa699f!8m2!3d6.1770063!4d-75.5860605!16s%2Fg%2F11tk71r_4w?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
     },
     color: "bg-orange",
     tags: ["gastronomía", "terrazas", "amigos", "envigado"]
