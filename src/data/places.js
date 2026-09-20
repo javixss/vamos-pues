@@ -654,5 +654,3 @@ export const zonesList = [
   "Caldas"
 ];
 
-
-];
