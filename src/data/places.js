@@ -652,5 +652,6 @@ export const zonesList = [
   "Sabaneta",
   "La Estrella",
   "Caldas"
+  "Santa Elena"
 ];
 
