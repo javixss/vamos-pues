@@ -280,16 +280,17 @@ const FiltersBar = ({
             </select>
           </div>
 
-          {/* 5. SECCIÓN / FILTRO PARA MAYORES DE EDAD (+18) 🔞 */}
+ {/* 5. SECCIÓN / FILTRO PARA MAYORES DE EDAD (+18) 🔞 */}
           <div style={{
             backgroundColor: adultFilter === 'adult-only' ? '#FFE4E8' : 'rgba(255,255,255,0.7)',
             border: '2px solid var(--violeta-dark)',
-            padding: '0.85rem',
+            padding: '0.6rem 0.8rem',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'space-between'
+            gap: '0.35rem',
+            alignSelf: 'start'
           }}>
-            <label htmlFor="adult-filter-select" style={{ fontWeight: '900', textTransform: 'uppercase', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+            <label htmlFor="adult-filter-select" style={{ fontWeight: '900', textTransform: 'uppercase', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
               🔞 Restricción de Edad:
             </label>
             <select
@@ -297,7 +298,7 @@ const FiltersBar = ({
               className="pop-select"
               value={adultFilter}
               onChange={(e) => setAdultFilter(e.target.value)}
-              style={{ marginTop: '0.4rem' }}
+              style={{ padding: '0.5rem 0.8rem' }}
             >
               <option value="all">Ver todos (Familiar y +18)</option>
               <option value="family-only">✅ Solo planes familiares (Apto todo público)</option>
