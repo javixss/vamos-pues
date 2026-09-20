@@ -34,15 +34,23 @@ const mapCategories = [
 ];
 
 const zonesCoords = {
-  'todo': { center: [6.2476, -75.5700], zoom: 12, label: 'Todo el Valle' },
-  'poblado': { center: [6.2088, -75.5670], zoom: 14, label: 'El Poblado' },
-  'laureles': { center: [6.2440, -75.5920], zoom: 14, label: 'Laureles / Belén' },
-  'centro': { center: [6.2464, -75.5681], zoom: 14, label: 'Centro' },
-  'norte': { center: [6.2711, -75.5658], zoom: 14, label: 'Norte / Aranjuez' },
-  'envigado': { center: [6.1731, -75.5862], zoom: 14, label: 'Envigado' },
-  'bello': { center: [6.3382, -75.5451], zoom: 14, label: 'Bello' },
+  'todo': { center: [6.2476, -75.5700], zoom: 11, label: 'Todo el Valle' },
+  'barbosa': { center: [6.4385, -75.3318], zoom: 14, label: 'Barbosa' },
+  'girardota': { center: [6.3768, -75.4455], zoom: 14, label: 'Girardota' },
+  'copacabana': { center: [6.3470, -75.5089], zoom: 14, label: 'Copacabana' },
+  'niquia': { center: [6.3450, -75.5450], zoom: 14, label: 'Niquia' },
+  'bello': { center: [6.3382, -75.5580], zoom: 14, label: 'Bello' },
+  'aranjuez': { center: [6.2780, -75.5600], zoom: 14, label: 'Aranjuez' },
+  'envigado': { center: [6.1685, -75.5828], zoom: 14, label: 'Envigado' },
+  'itagui': { center: [6.1725, -75.6105], zoom: 14, label: 'Itagüí' },
+  'laureles': { center: [6.2440, -75.5920], zoom: 14, label: 'Laureles' },
+  'poblado': { center: [6.2088, -75.5670], zoom: 14, label: 'Poblado' },
+  'sabaneta': { center: [6.1515, -75.6158], zoom: 14, label: 'Sabaneta' },
+  'la-estrella': { center: [6.1578, -75.6425], zoom: 14, label: 'La Estrella' },
+  'caldas': { center: [6.0917, -75.6355], zoom: 14, label: 'Caldas' },
   'santa-elena': { center: [6.2825, -75.5025], zoom: 13, label: 'Santa Elena' }
 };
+
 
 const MapView = ({ places, onSelectPlace, focusedPlace }) => {
   const mapContainerRef = useRef(null);
