@@ -639,12 +639,19 @@ export const categoriesList = [
 
 export const zonesList = [
   "Todas las zonas",
-  "El Poblado",
-  "Laureles",
-  "Centro",
-  "Envigado",
+  "Barbosa",
+  "Girardota",
+  "Copacabana",
+  "Niquia",
   "Bello",
-  "Belén",
-  "Norte / Aranjuez",
-  "Santa Elena"
+  "Aranjuez",
+  "Envigado",
+  "Itagüí",
+  "Laureles",
+  "Poblado",
+  "Sabaneta",
+  "La Estrella",
+  "Caldas"
+];
+
 ];
