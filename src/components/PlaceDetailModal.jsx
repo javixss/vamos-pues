@@ -213,6 +213,17 @@ const PlaceDetailModal = ({ place, onClose, onLocateOnMap }) => {
                 </a>
               )}
 
+              {place.links?.whatsapp && (
+                <a
+                  href={place.links.whatsapp}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="pop-btn pop-btn-sm bg-chartreuse"
+                >
+                  💬 WhatsApp
+                </a>
+              )}
+
               {place.links?.maps && (
                 <a 
                   href={place.links.maps} 
