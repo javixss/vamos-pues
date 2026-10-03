@@ -1,5 +1,41 @@
 import React, { useState } from 'react';
 import { categoriesList, zonesList } from '../data/places';
+import { SUGGESTIONS_EMAIL } from '../config';
+
+// Envía la sugerencia al correo configurado usando FormSubmit (sin servidor propio).
+const sendSuggestionByEmail = async (place) => {
+  const links = Object.fromEntries(Object.entries(place.links).filter(([, v]) => v));
+  // Bloque listo para pegar en src/data/places.js (solo falta asignar el id y revisar coords)
+  const placeForList = { ...place, id: 'ASIGNAR', links };
+
+  const linkLines = Object.entries(links).map(([k, v]) => `${k}: ${v}`).join('\n') || 'Sin enlaces';
+
+  const response = await fetch(`https://formsubmit.co/ajax/${SUGGESTIONS_EMAIL}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    body: JSON.stringify({
+      _subject: `Nueva sugerencia en Vamos Pues: ${place.name}`,
+      _template: 'box',
+      _captcha: 'false',
+      Nombre: place.name,
+      Categoría: place.category,
+      Zona: place.zone,
+      Dirección: place.address,
+      Descripción: place.description,
+      Horario: place.hours,
+      'Cómo llegar': place.howToGet,
+      Precio: `${place.priceLabel} (min ${place.priceMin} / max ${place.priceMax})`,
+      'Solo +18': place.isAdultOnly ? 'Sí' : 'No',
+      Enlaces: linkLines,
+      'Código para places.js': JSON.stringify(placeForList, null, 2),
+    }),
+  });
+
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok || data.success === 'false' || data.success === false) {
+    throw new Error(data.message || 'No se pudo enviar la sugerencia');
+  }
+};
 
 const AddPlaceModal = ({ isOpen, onClose, onPlaceAdded }) => {
   const [formData, setFormData] = useState({
@@ -25,6 +61,8 @@ const AddPlaceModal = ({ isOpen, onClose, onPlaceAdded }) => {
 
   const [isSuccess, setIsSuccess] = useState(false);
   const [createdPlace, setCreatedPlace] = useState(null);
+  const [isSending, setIsSending] = useState(false);
+  const [sendError, setSendError] = useState('');
 
   if (!isOpen) return null;
 
@@ -42,8 +80,9 @@ const AddPlaceModal = ({ isOpen, onClose, onPlaceAdded }) => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (isSending) return;
 
     // Default coordinates based on chosen zone
     const zoneCoordsFallback = {
@@ -94,6 +133,18 @@ const AddPlaceModal = ({ isOpen, onClose, onPlaceAdded }) => {
       tags: ['comunidad', formData.category.toLowerCase()]
     };
 
+    setIsSending(true);
+    setSendError('');
+    try {
+      await sendSuggestionByEmail(newPlace);
+    } catch (err) {
+      console.error('Error enviando sugerencia:', err);
+      setSendError('No pudimos enviar tu sugerencia en este momento. Revisa tu conexión e inténtalo de nuevo.');
+      setIsSending(false);
+      return;
+    }
+    setIsSending(false);
+
     onPlaceAdded(newPlace);
     setCreatedPlace(newPlace);
     setIsSuccess(true);
@@ -101,6 +152,7 @@ const AddPlaceModal = ({ isOpen, onClose, onPlaceAdded }) => {
 
   const handleClose = () => {
     setIsSuccess(false);
+    setSendError('');
     onClose();
   };
 
@@ -157,7 +209,7 @@ const AddPlaceModal = ({ isOpen, onClose, onPlaceAdded }) => {
                   Revisaremos tu sugerencia.
                 </p>
                 <p style={{ fontSize: '0.95rem', marginTop: '0.5rem' }}>
-                  Tu lugar <strong>"{createdPlace?.name}"</strong> ya ha sido agregado temporalmente a tu navegador para que puedas verlo en la lista y en el mapa.
+                  Recibimos tu sugerencia de <strong>"{createdPlace?.name}"</strong>. Si la aprobamos, aparecerá en la lista para todos. Mientras tanto, la puedes ver en tu navegador en la lista y en el mapa.
                 </p>
               </div>
               <button 
@@ -463,13 +515,20 @@ const AddPlaceModal = ({ isOpen, onClose, onPlaceAdded }) => {
                 </div>
               </div>
 
+              {sendError && (
+                <p role="alert" style={{ color: 'var(--rojo-alerta)', fontWeight: '800', border: '3px solid var(--rojo-alerta)', padding: '0.75rem', backgroundColor: '#FFEBEF' }}>
+                  ⚠️ {sendError}
+                </p>
+              )}
+
               {/* Submit Button */}
               <button
                 type="submit"
                 className="pop-btn bg-rosa"
-                style={{ color: '#fff', fontSize: '1.2rem', padding: '0.9rem', marginTop: '0.5rem' }}
+                disabled={isSending}
+                style={{ color: '#fff', fontSize: '1.2rem', padding: '0.9rem', marginTop: '0.5rem', opacity: isSending ? 0.7 : 1 }}
               >
-                🚀 Enviar Sugerencia
+                {isSending ? '⏳ Enviando...' : '🚀 Enviar Sugerencia'}
               </button>
 
             </form>
